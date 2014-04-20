@@ -78,8 +78,8 @@ void Fourier::Transform(const int isign)
 				data[i-1] =  data[i-1] + tempr;
 				data[i]   =  data[i] + tempi;
 
-                //正变换的归一化
-                if (isign == 1) {
+                //逆变换的归一化
+                if (isign == -1) {
                     data[j-1] /= 2.0;
                     data[j]   /= 2.0;
                     data[i-1] /= 2.0;
