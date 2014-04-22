@@ -120,7 +120,7 @@ void Fourier::PrintData()
     outdata << fixed << showpoint << right << setprecision(6);
 
     for (vector<double>::iterator iter = data.begin(); iter != data.end(); iter += 2) {
-        outdata << x << setw(30) << *iter << endl;
+        outdata << *iter << endl;
     }
 }
 
